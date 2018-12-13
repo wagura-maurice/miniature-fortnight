@@ -14,6 +14,8 @@ return [
     */
 
     'name' => env('APP_NAME', 'Laravel'),
+    'app_author' => env('APP_AUTHOR', 'Laravel'),
+    'author' => env('AUTHOR_URL', 'Laravel'),
 
     /*
     |--------------------------------------------------------------------------
@@ -67,7 +69,7 @@ return [
     |
     */
 
-    'timezone' => 'UTC',
+    'timezone' => env('APP_TIMEZONE', 'UTC+3'),
 
     /*
     |--------------------------------------------------------------------------
