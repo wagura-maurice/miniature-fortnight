@@ -21,6 +21,8 @@
 </head>
 <body>
     <div id="app">
+        @if(\Request::is('login') || \Request::is('register'))
+        @else
         <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
@@ -71,7 +73,7 @@
                 </div>
             </div>
         </nav>
-
+        @endif
         <main class="py-4">
             @yield('content')
         </main>
